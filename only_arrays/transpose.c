@@ -1,50 +1,70 @@
 #include <stdio.h>
 
-void printMatrix(int matrix[][3], int rows, int cols)
+void transposeMatrix(int matrix[][10], int rows, int cols)
 {
-        printf("Matrix:\n");
-        for (int i = 0; i < rows; i++)
+        int i, j;
+        int transposedMatrix[cols][rows]; // Transposed matrix with swapped dimensions
+
+        // Transpose the matrix
+        for (i = 0; i < rows; i++)
         {
-                for (int j = 0; j < cols; j++)
+                for (j = 0; j < cols; j++)
+                {
+                        transposedMatrix[j][i] = matrix[i][j];
+                }
+        }
+
+        // Print the original matrix
+        printf("Original Matrix:\n");
+        for (i = 0; i < rows; i++)
+        {
+                for (j = 0; j < cols; j++)
                 {
                         printf("%d ", matrix[i][j]);
                 }
                 printf("\n");
         }
-}
 
-void transposeMatrix(int matrix[][3], int rows, int cols, int result[][3])
-{
-        for (int i = 0; i < rows; i++)
+        // Print the transposed matrix
+        printf("Transposed Matrix:\n");
+        for (i = 0; i < cols; i++)
         {
-                for (int j = 0; j < cols; j++)
+                for (j = 0; j < rows; j++)
                 {
-                        result[j][i] = matrix[i][j];
+                        printf("%d ", transposedMatrix[i][j]);
                 }
+                printf("\n");
         }
 }
 
 int main()
 {
-        int matrix[3][3];
-        int transpose[3][3];
+        int rows, cols;
+        printf("Enter the number of rows (maximum 10): ");
+        scanf("%d", &rows);
+
+        printf("Enter the number of columns (maximum 10): ");
+        scanf("%d", &cols);
+
+        if (rows > 10 || cols > 10)
+        {
+                printf("Invalid input! Number of rows and columns should be less than 10.\n");
+                return 1; // Exit the program with an error code
+        }
+
+        int matrix[10][10]; // Maximum size of 10x10 matrix
 
         printf("Enter the elements of the matrix:\n");
-        for (int i = 0; i < 3; i++)
+        for (int i = 0; i < rows; i++)
         {
-                for (int j = 0; j < 3; j++)
+                for (int j = 0; j < cols; j++)
                 {
-                        printf("Enter element at position [%d][%d]: ", i, j);
+                        printf("Enter element at position (%d, %d): ", i, j);
                         scanf("%d", &matrix[i][j]);
                 }
         }
 
-        printMatrix(matrix, 3, 3);
-
-        transposeMatrix(matrix, 3, 3, transpose);
-
-        printf("\nTranspose Matrix:\n");
-        printMatrix(transpose, 3, 3);
+        transposeMatrix(matrix, rows, cols);
 
         return 0;
 }
