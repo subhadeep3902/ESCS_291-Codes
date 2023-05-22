@@ -1,0 +1,28 @@
+Letter Frequency
+
+   a        3
+   b        3
+   c        3
+   d        6
+   e       11
+   f        4
+   g        3
+   h        8
+   i        5
+   j        3
+   k        3
+   l        3
+   m        3
+   n        4
+   o       12
+   p        3
+   q        3
+   r        6
+   s        1
+   t        7
+   u        6
+   v        3
+   w        4
+   x        3
+   y        4
+   z        3
