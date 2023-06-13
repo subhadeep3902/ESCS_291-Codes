@@ -5,7 +5,7 @@
 
 
 ## License
-[Apache License 2.0 © ESCS_201-Codes](https://github.com/SatyakiDey75/Hack-ur-Way-App/blob/main/LICENSE)
+[Apache License 2.0 © ESCS_201-Codes](https://github.com/subhadeep3902/ESCS_201-Codes/blob/2ce8d81cda4f583d1b00638a82ea1a5559a03558/LICENSE)
 
 
 ## 🙋‍♂️ Support
