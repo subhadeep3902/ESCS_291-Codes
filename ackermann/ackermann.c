@@ -17,6 +17,6 @@ int main(){
     printf("Enter two numbers:\n");
     scanf("%d %d",&x,&y);
     A=ack(x,y);
-    printf("%d", A);
+    printf("%d\n", A);
     return 0;
 }

@@ -11,6 +11,7 @@ void printArray(int *arr, int size, int cols) {
 
 int main() {
     int n;
+    printf("Enter a number: ");
     scanf("%d", &n);
     int x = (n * 2) - 1;
     int arr[x][x];
