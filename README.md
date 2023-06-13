@@ -6,7 +6,7 @@
 ## How to Install
 
 1. Create a ```C``` virtual environment. 
-2. Clone the repo ```git clone https://github.com/subhadeep3902/ES-CS291_Codes.git``` or download the repository.
+2. Clone the repo ```git clone https://github.com/subhadeep3902/ESCS_201-Codes.git``` or download the repository.
 3. Go to the cloned/downloaded directory ``` cd problems ```  . 
 4. Run ``` pip3 install gcc ```.
 5. And now you can run the example scripts or create your own scripts.  
