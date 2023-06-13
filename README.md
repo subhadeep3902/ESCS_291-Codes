@@ -14,4 +14,4 @@
 
 ---
 
-Made with ❤️ and Dart. <br><br>
+Made with ❤️ and C. <br><br>
