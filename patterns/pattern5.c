@@ -3,7 +3,7 @@
 void printArray(int *arr, int size, int cols) {
     for (int i = 0; i < size; i++) {
         for (int j = 0; j < cols; j++) {
-            printf("%d ", *(arr + i * cols + j));
+            printf("%2d ", *(arr + i * cols + j));
         }
         printf("\n");
     }
