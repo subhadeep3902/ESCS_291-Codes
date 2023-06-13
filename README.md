@@ -27,7 +27,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 
 ## Where to contact ?
-Contact: <a href = "mailto: subha9.5roy350@gmail.com">Subhadeep Roy/a>
+Contact: <a href = "mailto: subha9.5roy350@gmail.com">Subhadeep Roy</a>
 
 
 ## License
