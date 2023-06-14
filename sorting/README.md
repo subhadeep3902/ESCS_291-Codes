@@ -38,7 +38,7 @@ Binary Search is defined as a searching algorithm used in a sorted array by repe
 - - -
 <br/>
 
-## <b>Bubble Sort
+# <b>Bubble Sort
 
 Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in the wrong order. This algorithm is not suitable for large data sets as its average and worst-case time complexity is quite high.
 
@@ -57,7 +57,7 @@ Insertion sort is a simple sorting algorithm that works similar to the way you s
 
  ```Time Complexity: O(N^2)```
 
-        To sort an array of size N in ascending order iterate over the array and compare the current element (key) to its predecessor, if the key element is smaller than its predecessor, compare it to the elements before. Move the greater elements one position up to make space for the swapped element.
+ - To sort an array of size N in ascending order iterate over the array and compare the current element (key) to its predecessor, if the key element is smaller than its predecessor, compare it to the elements before. Move the greater elements one position up to make space for the swapped element.
 
 - - -
 <br/>
