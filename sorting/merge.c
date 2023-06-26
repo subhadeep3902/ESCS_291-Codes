@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 void merge(int *arr, int p, int q, int r)
 {
