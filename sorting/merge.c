@@ -1,46 +1,32 @@
 #include <stdio.h>
 
-void merge(int arr[], int left, int mid, int right)
+void merge(int *arr, int p, int q, int r)
 {
-        int n1 = mid - left + 1;
-        int n2 = right - mid;
-
-        int L[n1], R[n2];
-
-        for (int i = 0; i < n1; i++)
+        int n1 = p;
+        int n2 = q + 1;
+        int *buffer = (int *)malloc((r - p + 1) * sizeof(int));
+        int t = 0;
+        while (n1 <= q && n2 <= r)
         {
-                L[i] = arr[left + i];
-        }
-        for (int j = 0; j < n2; j++)
-        {
-                R[j] = arr[mid + 1 + j];
-        }
-
-        int i = 0;
-        int j = 0;
-        int k = left;
-
-        while (i < n1 && j < n2)
-        {
-                if (L[i] <= R[j])
+                if (arr[n1] < arr[n2])
                 {
-                        arr[k++] = L[i++];
+                        buffer[t++] = arr[n1++];
                 }
                 else
                 {
-                        arr[k++] = R[j++];
+                        buffer[t++] = arr[n2++];
                 }
         }
+        while (n1 <= q)
+                buffer[t++] = arr[n1++];
+        while (n2 <= r)
+                buffer[t++] = arr[n2++];
 
-        while (i < n1)
+        for (int i = p; i <= r; i++)
         {
-                arr[k++] = L[i++];
+                arr[i] = buffer[i - p];
         }
-
-        while (j < n2)
-        {
-                arr[k++] = R[j++];
-        }
+        free(buffer);
 }
 
 void mergeSort(int arr[], int left, int right)
